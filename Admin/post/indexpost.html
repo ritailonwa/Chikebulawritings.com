@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Admin section- mange posts</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- fontawesome.com-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--custom styling-->
+    <link href="../../css/style.css" rel="stylesheet"/>
+
+    <!--admin styling-->
+    <link href="../../css/admin.css" rel="stylesheet"/>
+
+    <!--goggle font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
+
+
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1 class="logo-text"><span>Chikeluba</span>writings</h1>
+      </div>
+      <i class="fa fa-bars menu-toggle"></i>
+
+      <ul class="nav">
+      
+     <li>
+      <a href="#">
+        <i class="fa fa-user"></i>
+         Chikeluba 
+         <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
+        </a>
+      <ul>
+       <li><a href="#" class="logout"> Logout</a></li>
+      </ul>
+     </li>
+      </ul>
+
+    </header>
+     <!-- admin page wrapper-->
+     <div class="admin-wrapper">
+      <!--left-sidebar-->
+      <div class="left-sidebar">
+     <ul>
+      <li><a href="indexpost.html">Manage Post</a></li>
+      <li><a href="../users/indexusers.html">Manage Users</a></li>
+      <li><a href="../topics/indextopics.html">Manage Topics</a></li>
+     </ul>
+      </div>
+      <!--//left-sidebar-->
+      <!--admin-content-->
+      <div class="admin-content">
+      <div class="button-group">
+        <a href="createposts.html" class="btn btn-big">Add Post</a>
+        <a href="indexpost.html" class="btn btn-big">Manage Post</a>
+      </div>
+      <div class="content">
+      <h2 class="page-title">Manage Post</h2>
+      <table>
+        <thead>
+          <th>SN</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th colspan="3">Action</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>This is the frist post</td>
+            <td>Chikeluba writings</td>
+            <td><a class="edit">edit</a></td>
+            <td><a class="delete">delete</a></td>
+            <td><a class="publish">publish</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>This is the second post</td>
+            <td>Chikeluba writings</td>
+            <td><a class="edit">edit</a></td>
+            <td><a class="delete">delete</a></td>
+            <td><a class="publish">publish</a></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      </div>
+       <!--//admin-content-->
+     </div>
+    
+ <!--page wrapper-->
+       
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!--custom script-->
+    <script src="../../js/scripts.js"></script>
+  </body>
+</html>

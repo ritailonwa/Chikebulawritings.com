@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Admin section- Add Users</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- fontawesome.com-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--custom styling-->
+    <link href="../../css/style.css" rel="stylesheet"/>
+
+    <!--admin styling-->
+    <link href="../../css/admin.css" rel="stylesheet"/>
+
+    <!--goggle font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
+
+
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1 class="logo-text"><span>Chikeluba</span>writings</h1>
+      </div>
+      <i class="fa fa-bars menu-toggle"></i>
+
+      <ul class="nav">
+      
+     <li>
+      <a href="#">
+        <i class="fa fa-user"></i>
+         Chikeluba 
+         <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
+        </a>
+      <ul>
+       <li><a href="#" class="logout"> Logout</a></li>
+      </ul>
+     </li>
+      </ul>
+
+    </header>
+     <!-- admin page wrapper-->
+     <div class="admin-wrapper">
+      <!--left-sidebar-->
+      <div class="left-sidebar">
+     <ul>
+      <li><a href="../post/indexpost.html">Add Post</a></li>
+      <li><a href="indexusers.html">Manage Users</a></li>
+      <li><a href="../topics/indextopics.html">Manage Topics</a></li>
+     </ul>
+      </div>
+      <!--//left-sidebar-->
+      <!--admin-content-->
+      <div class="admin-content">
+      <div class="button-group">
+        <a href="createusers.html" class="btn btn-big">Manage Users</a>
+        <a href="indexusers.html" class="btn btn-big">Manage Userss</a>
+      </div>
+      <div class="content">
+      <h2 class="page-title">Add Users</h2>
+      <form action="createusers.html" method="post">
+        <div>
+        <label>username</label>
+        <input type="text" name="username" class="text-input">
+        </div>
+
+        <div>
+          <label>Email</label>
+          <input type="email" name="email" class="text-input">
+          </div>
+
+          <div>
+            <label>Password</label>
+            <input type="password" name="password" class="text-input">
+            </div>
+
+            <div>
+              <label>Password Confirmation</label>
+              <input type="password" name="passwordcomf" class="text-input">
+              </div>
+
+              <div>
+                <label>Role</label>
+                <select name="Role" class="text-input">
+                <option value="Author">Author</option>
+                <option value="Admin">Admin</option>
+                </select>
+              </div> 
+
+      <div>
+        <button type="submit" class="btn btn-big">Add users</button>
+      </div>
+      </form>
+       <!--//admin-content-->
+     </div>
+    
+ <!--page wrapper-->
+       
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+         <!--CKeditor-->
+         <script src="https://cdn.ckeditor.com/ckeditor5/40.0.0/classic/ckeditor.js"></script>
+
+    <!--custom script-->
+    <script src="../../js/scripts.js"></script>
+  </body>
+</html>
+
+
